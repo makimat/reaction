@@ -23,6 +23,7 @@ export default function () {
         Logger.error(`[Job]: ${msg}`);
         Logger.error("Note the above failure!");
         Logger.error("One more");
+        Logger.error("Two more");
         return job.fail(msg, { fatal: true });
       }
 
