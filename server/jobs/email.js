@@ -21,6 +21,9 @@ export default function () {
       if (!from || !to || !subject || !html) {
         const msg = "Email job requires an options object with to/from/subject/html.";
         Logger.error(`[Job]: ${msg}`);
+        Logger.error("Note the above failure!");
+        Logger.error("One more");
+        Logger.error("Two more");
         return job.fail(msg, { fatal: true });
       }
 
